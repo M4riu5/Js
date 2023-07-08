@@ -29,3 +29,17 @@ const testtwo = "Js" + 2 + "test"
 console.log('testtwo -->', testtwo);
 const testtree = "Js"
 console.log('testtree -->',`hello my name is ${testtree} , number =  ${2+5}` );
+
+const myname = "Marius"
+const age = 27
+const doidriveacar = true
+const town = 'Glasgow'
+const favcity = "Miasino"
+
+console.log(`My name is ${myname} , im ${age} old , im driving a car ${doidriveacar}, my favourite city is ${favcity}, and i live in ${town}`)
+const firstnum = 3
+const secondnum = 4
+const thirdnum = 6
+const fourthnum = 10
+const avg = firstnum+secondnum+thirdnum+fourthnum
+console.log('avg -->', avg/4);
