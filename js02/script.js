@@ -125,3 +125,35 @@ console.log('priced to fixed-->', priced);
 console.log('price.toPrecision(2) -->', price.toPrecision(2));
 console.log('price.toPrecision(4) -->', price.toPrecision(4));
 console.log('price.toPrecision(3) -->', price.toPrecision(3));
+
+// Practice
+let legalAge = 20
+let clientAge =27
+if (clientAge > legalAge) {
+    console.log('Legal')
+} else {
+    console.log('Not')
+}
+
+const vard = "Marius"
+if (vard.length > 6 ) {
+    console.log('Long name')
+} else {
+    console.log('not long')
+}
+
+const bioage = 27
+if (bioage > 100 || bioage < 0) {
+    console.log('Invalid Age')
+} else if (bioage < 18) {
+    console.log('Kid')
+} else if (bioage < 99) {
+    console.log('adult')
+}
+
+const makina = 'Audi' 
+if (makina == 'BMW' || makina== 'Mini' || makina == 'Rolls-Royce') {
+    console.log('BMW GROUP')
+} else if (makina == 'VW' ||makina == 'Audi' ||makina == 'Bentley' || makina =='Bugatti' ||makina == 'Lamborghini' ||makina == 'Porsche') {
+    console.log('VW GROUP')
+}
