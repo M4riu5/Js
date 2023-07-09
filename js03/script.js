@@ -22,7 +22,7 @@ let isDarkModeOn = false;
 const darkColor = '#333';
 const lightColor = '#fff';
 
-isDarkModeOn = true
+isDarkModeOn = false
 
 //  if (isDarkModeOn === true) {
 //     document.body.style.backgroundColor = darkColor;
@@ -163,4 +163,110 @@ let plusone = i++
 
 for (let i = 0 ; i <= 10 ; i+=1) {
     document.body.insertAdjacentHTML('afterbegin', `<p>Hello World ${i}</p>`)
+}
+
+
+// Practice 
+
+// Switch
+
+const car = 'BMW'
+switch (car) {
+    case 'VW':
+    case 'AUDI':
+    case 'Bentley':
+    case 'Bugatti':
+    case 'Lamborghini':
+    case 'Porsche':
+        console.log('VW GROUP')
+        break;
+    case 'BMW':
+    case 'MINI':
+    case 'Rolls-Royce':
+        console.log('BMW GROUP')
+        break;
+    default:
+        console.log('Bad Input')
+        break;
+}
+
+let userInput = 'Apple'
+
+switch (userInput) {
+    case 'Pickle':
+    case 'Tomato':
+    case 'Cabbage':
+        console.log('Plants')
+        break;
+    case 'Apple' :
+    case 'Melon' :
+    case 'WaterMelon' :
+    case 'Mango' :
+        console.log('Fruits')
+        break;
+    default:
+        console.log('invalid input')
+        break;
+}
+
+let weekday = +'5'
+
+switch (weekday) {
+    case 1:
+        weekday = 'Monday'
+        break;
+    case 2:
+        weekday = 'Tuesday'
+        break;
+    case 3:
+        weekday = 'Wednesday'
+        break;
+    case 4:
+        weekday = 'Thursday'
+        break;
+    case 5:
+        weekday = 'Friday'
+        break;
+    case 6:
+        weekday = 'Saturday'
+        break;
+    case 7:
+        weekday = 'Sunday'
+        break;
+
+    default:
+        console.log('invalid day')
+        break;
+}
+
+let daytoday = weekday
+console.log('daytoday -->', daytoday);
+
+// Ternary
+
+let names = 'Mariusss'
+
+const lenghts = names.length <= 6 ? 'Shortname' : 'Long Name'
+console.log('lenghts -->', lenghts);
+
+let clientAge = 20
+let legalAge = 18
+
+const canDrive = clientAge < legalAge ? 'Cant drive' : 'Can Drive'
+console.log('canDrive -->', canDrive);
+
+const candrivecar = clientAge <= 0 || clientAge > 120 ? 'Invalid age' : clientAge < legalAge ? "cant" : 'can'
+console.log('candrivecar -->', candrivecar);
+
+const phone = 'Iphone' 
+const isIphoneuser = phone === 'Iphone'
+console.log('isIphoneuser -->', isIphoneuser);
+
+// Cycles practice
+//for(i = 1 ; i <= 10 ; i++) {
+//    console.log(`${i} Marius`)
+//}
+
+for(i = 10 ; i >= 1 ; i--) {
+    console.log(i)
 }
