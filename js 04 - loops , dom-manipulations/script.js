@@ -44,9 +44,62 @@ const maindate = document.getElementById('date')
 const mainp = document.getElementById('paragraph')
 
 mainel.textContent = 'Super Title'
-maindate.textContent = 'Fryday'
+maindate.textContent = new Date().toLocaleString('en-En', {dateStyle:'long'})
 const newtext = ' Hello'
 mainp.textContent = newtext + mainp.innerText
 
 const color = document.getElementById('violet')
 color.style.color = 'violet'
+
+//querySelector
+
+const colors = document.querySelector('#colors li:last-child')
+console.log('colors -->', colors);
+colors.textContent = 'Violet'
+
+//Adding 
+color.innerHTML += '<li>Added element</li>'
+
+const itemsUlEl = document.getElementById('items')
+// with cycle 
+let liString = '';
+console.time('generating 1000 items')
+for (let i = 0; i <= 10; i++) {
+    liString += `<li>Item ${i}</li>`
+}
+itemsUlEl.innerHTML = liString
+console.timeEnd('generating 1000 items')
+
+// Practice
+// print 3 times
+let vards = ''
+let i = 0
+while (i<3) {
+    vards += 'Marius'
+    i++
+}
+console.log('vards -->', vards);
+
+// DO while executes atleast one time if false
+let times = 2
+let is = 0
+let name = ''
+do {
+    name += 'Marius'
+ is++ 
+} while (is < times);
+console.log('whiledo--->', name)
+
+// Random number 1-5
+const rndmnum = Math.floor(Math.random()*5)+1
+console.log('rndmnum -->', rndmnum);
+// Random number from 5 and 12
+const rndm = Math.floor(Math.random()*8+5)
+console.log('rndm -->', rndm);
+// winner
+const lotternumer = Math.floor(Math.random()*10)+1
+if (lotternumer === 5) {
+    console.log('you are a winner')
+} else {
+    console.log('Not so much')
+}
