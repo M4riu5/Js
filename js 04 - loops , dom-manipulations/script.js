@@ -34,3 +34,19 @@ console.log('result -->', result);
 const divel = document.getElementById('box')
 // innerHTML append HTML code from sting
 divel.innerHTML = "<h3>I am Dinamic <i>element</i></h3>"
+
+// h2 change to Super tittle
+// p change to friday 
+// p append text 
+
+const mainel = document.getElementById('title')
+const maindate = document.getElementById('date')
+const mainp = document.getElementById('paragraph')
+
+mainel.textContent = 'Super Title'
+maindate.textContent = 'Fryday'
+const newtext = ' Hello'
+mainp.textContent = newtext + mainp.innerText
+
+const color = document.getElementById('violet')
+color.style.color = 'violet'
